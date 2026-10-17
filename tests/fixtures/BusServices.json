@@ -1,0 +1,54 @@
+[
+ {
+  "ServiceNo": "10",
+  "Operator": "SBST",
+  "Direction": 1,
+  "Category": "TRUNK",
+  "OriginCode": "01012",
+  "DestinationCode": "01014",
+  "AM_Peak_Freq": "07-13",
+  "AM_Offpeak_Freq": "09-17",
+  "PM_Peak_Freq": "11-17",
+  "PM_Offpeak_Freq": "14-20",
+  "LoopDesc": ""
+ },
+ {
+  "ServiceNo": "10",
+  "Operator": "SBST",
+  "Direction": 2,
+  "Category": "TRUNK",
+  "OriginCode": "01014",
+  "DestinationCode": "01013",
+  "AM_Peak_Freq": "07-13",
+  "AM_Offpeak_Freq": "09-17",
+  "PM_Peak_Freq": "11-17",
+  "PM_Offpeak_Freq": "14-20",
+  "LoopDesc": ""
+ },
+ {
+  "ServiceNo": "2",
+  "Operator": "SBST",
+  "Direction": 1,
+  "Category": "TRUNK",
+  "OriginCode": "01012",
+  "DestinationCode": "01012",
+  "AM_Peak_Freq": "07-13",
+  "AM_Offpeak_Freq": "09-17",
+  "PM_Peak_Freq": "11-17",
+  "PM_Offpeak_Freq": "14-20",
+  "LoopDesc": "Loop at A"
+ },
+ {
+  "ServiceNo": "99",
+  "Operator": "SBST",
+  "Direction": 1,
+  "Category": "TRUNK",
+  "OriginCode": "01012",
+  "DestinationCode": "01014",
+  "AM_Peak_Freq": "07-13",
+  "AM_Offpeak_Freq": "09-17",
+  "PM_Peak_Freq": "11-17",
+  "PM_Offpeak_Freq": "14-20",
+  "LoopDesc": ""
+ }
+]

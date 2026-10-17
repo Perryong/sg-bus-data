@@ -1,0 +1,33 @@
+name: update data
+on:
+  schedule:
+    - cron: "0 19 * * 0"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --locked
+      - run: uv run pytest -q
+      - run: uv run python scripts/update.py
+        env:
+          LTA_KEY: ${{ secrets.LTA_KEY }}
+      - name: Commit data if changed
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "data: update $(TZ=Asia/Singapore date +%F)"
+            git pull --rebase
+            git push
+          fi

@@ -1,0 +1,23 @@
+[
+ {
+  "BusStopCode": "01014",
+  "RoadName": "Rd 01014",
+  "Description": "C",
+  "Latitude": 1.3,
+  "Longitude": 103.8
+ },
+ {
+  "BusStopCode": "01012",
+  "RoadName": "Rd 01012",
+  "Description": "A",
+  "Latitude": 1.29684825487647,
+  "Longitude": 103.85253591654006
+ },
+ {
+  "BusStopCode": "01013",
+  "RoadName": "Rd 01013",
+  "Description": "B",
+  "Latitude": 1.2987654321,
+  "Longitude": 103.8
+ }
+]
